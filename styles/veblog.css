@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: IranSans;
+}
+
+@font-face {
+  font-family: IranSans;
+  src: url(../assets/fonts/IRANSansLight.woff);
+  src: url(../assets/fonts/IRANSansWeb-Light.woff);
+  src: url(../assets/fonts/IRANSansWeb-Light.woff2);
+}
+header {
+  width: 100%;
+  background-image: url("https://www.golestan.com/wp-content/uploads/2023/01/header-back-1.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  img {
+    position: relative;
+    top: 50px;
+  }
+  nav {
+    display: flex;
+    .menu__item {
+      color: white;
+      text-decoration: none;
+      border-left: 1px solid white;
+      padding: 0 10px;
+      position: relative;
+      cursor: pointer;
+      .sub__menu {
+        position: absolute;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #2b2b2b;
+
+        .sub__menu__item {
+          padding: 10px 25px;
+          white-space: nowrap;
+          text-decoration: none;
+          color: lightgray;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      &:hover {
+        .sub__menu {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+.info {
+  display: flex;
+  justify-content: right;
+  padding: 5% 10% 0 0;
+  color: red;
+  margin-top: 10%;
+}
+.cards {
+  margin: 7% auto;
+  max-width: 1100px;
+  padding: 25px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  .card {
+    width: 320px;
+    background-color: rgb(245, 239, 239);
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .card__info {
+      height: 296px;
+      padding: 20px;
+      h3,
+      p,
+      button {
+        margin-top: 20px;
+      }
+      p {
+        text-align: justify;
+        line-height: 30px;
+        height: 130px;
+        color: rgb(153, 148, 148);
+      }
+      h3 {
+        font-size: larger;
+        color: rgb(255, 13, 61);
+      }
+      button {
+        color: rgb(145, 143, 143);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-family: IranSans;
+        transition-property: background-color;
+        transition-duration: 0;
+        
+        border: 1px solid rgb(172, 169, 169);
+        border-radius: 8px;
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
+.abute {
+  background-color: #dbdbdb;
+  height: 100px;
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* my try */
+  .socialBox {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: all 100ms 100ms ease-in-out;
+  }
+  .facebookBox {
+    background-image: url(../assets/social_icons/facebook.png);
+    background-position: center;
+    &:hover {
+      background-image: url(../assets/social_icons/facebookcolor.png);
+    }
+  }
+  .linkdinBox {
+    background-image: url(../assets/social_icons/linkidin.png);
+    background-position: center;
+    &:hover {
+      background-image: url(../assets/social_icons/linkdincolor.png);
+    }
+  }
+  .instaBox {
+    background-image: url(../assets/social_icons/instagram.png);
+    background-position: center;
+    &:hover {
+      background-image: url(../assets/social_icons/instagramcolor.png);
+    }
+  }
+  .telegramBox {
+    background-image: url(../assets/social_icons/telegram.png);
+    background-position: center;
+    &:hover {
+      background-image: url(../assets/social_icons/telegramcolor.png);
+    }
+  }
+  .aparatBox {
+    background-image: url(../assets/social_icons/aparat.png);
+    background-position: center;
+    &:hover {
+      background-image: url(../assets/social_icons/aparatcolor.png);
+    }
+  }
+  .glBox {
+    background-image: url(../assets/social_icons/gl.png);
+    background-position: center;
+    &:hover {
+      background-image: url(../assets/social_icons/glcolor.png);
+    }
+  }
+  /* my try */
+}
+.navare{
+   height: 30px;
+  width: 100%;
+  background-color: #ff0000;
+}
+.footer {
+  background-image: url(https://www.golestan.com/wp-content/uploads/2023/01/header-back.png);
+  padding: 20px 0;
+  text-align: center; 
+  hr{
+   width:200px; 
+   margin: auto;
+  }
+
+}
+.footer-content {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 0; 
+}
+
+.footer-column {
+  flex: 0 0 24%; 
+  min-width: 150px; 
+  margin: 0; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+.footer-column h4 {
+  font-size: 18px; 
+  color: white; 
+}
+
+.footer-column ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  font-size: 16px;
+  color: white; 
+  margin: 5px 0;
+}
+.taraz{
+margin-top: 13%;
+}
+.valed{
+background-color: #ed1c24;
+}
